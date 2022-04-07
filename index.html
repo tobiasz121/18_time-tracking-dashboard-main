@@ -3,78 +3,138 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">  
+  <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./index.css">
   <title>Frontend Mentor | Time tracking dashboard</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  
 </head>
-<body>
+<body class="grid--centered">
+  <main class="container grid columns">
+    <div class="header">
+      <div class="header-info grid">
+        <div class="header-info-person flex">
+          <img src="./images/image-jeremy.png" alt="">
+          <div class="flex flex--person">
+            <h3 class="fs-400 text-accent-light">Report for</h3>
+            <p class="fs-700 fw-light">Jeremy Robson</p>
+          </div>
+        </div>
+      </div>
+      <div class="header-interval flex">
+        <p class="text-accent-dark">Daily</p>
+        <p class="text-accent-dark">Weekly</p>
+        <p class="text-accent-dark">Monthly</p>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="card-colored" style="background-color: hsl(var(--clr-light-red));">
+        <p class="sr-only">Colored content</p>
+        <img src="./images/icon-work.svg" alt="">
+      </div>
+      <div class="card-content flow">
+        <div class="flex flex-content">
+          <h1 class="fs-500 fw-bold">Work</h1>
+          <img src="./images/icon-ellipsis.svg" alt="dots">
+        </div>
+        <div class="flex flex-content flex-content--desktop">
+          <p class="fs-900 fw-light">32hrs</p>
+          <p class="text-accent-light">Last week - 36hrs</p>
+        </div>
+      </div>
+    </div>
 
-  Report for
-  Jeremy Robson
+    <div class="card">
+      <div class="card-colored" style="background-color: hsl(var(--clr-soft-blue));">
+        <p class="sr-only">Colored content</p>
+        <img src="./images/icon-play.svg" alt="">
+      </div>
+      <div class="card-content flow">
+        <div class="flex flex-content">
+          <h1 class="fs-500 fw-bold">Play</h1>
+          <img src="./images/icon-ellipsis.svg" alt="dots">
+        </div>
+        <div class="flex flex-content flex-content--desktop">
+          <p class="fs-900 fw-light">10hrs</p>
+          <p class="text-accent-light">Last week - 36hrs</p>
+        </div>
+      </div>
+    </div>
 
-  Daily
-  Weekly
-  Monthly
+    <div class="card">
+      <div class="card-colored" style="background-color: hsl(var(--clr-pink));">
+        <p class="sr-only">Colored content</p>
+        <img src="./images/icon-study.svg" alt="">
+      </div>
+      <div class="card-content flow">
+        <div class="flex flex-content">
+          <h1 class="fs-500 fw-bold">Study</h1>
+          <img src="./images/icon-ellipsis.svg" alt="dots">
+        </div>
+        <div class="flex flex-content flex-content--desktop">
+          <p class="fs-900 fw-light">4hrs</p>
+          <p class="text-accent-light">Last week - 7hrs</p>
+        </div>
+      </div>
+    </div>
 
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
+    <div class="card">
+      <div class="card-colored" style="background-color: hsl(var(--clr-lime-green));">
+        <p class="sr-only">Colored content</p>
+        <img src="./images/icon-exercise.svg" alt="">
+      </div>
+      <div class="card-content flow">
+        <div class="flex flex-content">
+          <h1 class="fs-500 fw-bold">Exercise</h1>
+          <img src="./images/icon-ellipsis.svg" alt="dots">
+        </div>
+        <div class="flex flex-content flex-content--desktop">
+          <p class="fs-900 fw-light">4hrs</p>
+          <p class="text-accent-light">Last week - 5hrs</p>
+        </div>
+      </div>
+    </div>
 
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
+    <div class="card">
+      <div class="card-colored" style="background-color: hsl(var(--clr-violet));">
+        <p class="sr-only">Colored content</p>
+        <img src="./images/icon-social.svg" alt="">
+      </div>
+      <div class="card-content flow">
+        <div class="flex flex-content">
+          <h1 class="fs-500 fw-bold">Social</h1>
+          <img src="./images/icon-ellipsis.svg" alt="dots">
+        </div>
+        <div class="flex flex-content flex-content--desktop">
+          <p class="fs-900 fw-light">5hrs</p>
+          <p class="text-accent-light">Last week - 10hrs</p>
+        </div>
+      </div>
+    </div>
 
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
+    <div class="card">
+      <div class="card-colored" style="background-color: hsl(var(--clr-soft-orange));">
+        <p class="sr-only">Colored content</p>
+        <img src="./images/icon-self-care.svg" alt="">
+      </div>
+      <div class="card-content flow">
+        <div class="flex flex-content">
+          <h1 class="fs-500 fw-bold">Self Care</h1>
+          <img src="./images/icon-ellipsis.svg" alt="dots">
+        </div>
+        <div class="flex flex-content flex-content--desktop">
+          <p class="fs-900 fw-light">2hrs</p>
+          <p class="text-accent-light">Last week - 2hrs</p>
+        </div>
+      </div>
+    </div>
 
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
-
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
-
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
+  </main>
 
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 </html>
