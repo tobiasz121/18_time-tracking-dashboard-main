@@ -140,6 +140,10 @@ picture {
     border: 0;
 }
 
+.header-interval > .active {
+    color: hsl(var(--clr-white))
+}
+
 
 /* Components  */
 
