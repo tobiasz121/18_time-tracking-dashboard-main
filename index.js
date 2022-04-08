@@ -28,7 +28,7 @@ buttons.forEach(button => {
             console.log(hr.textContent)
         })   
         event.currentTarget.classList.add('active')
-        const period = event.currentTarget.textContent
+        const period = event.currentTarget.textContent.toLowerCase()
         const data = fetch('./data.json')
             .then(response => {
                 return response.json()
