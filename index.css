@@ -6,6 +6,7 @@
     /* Colors */
     --clr-dark: 226 43% 10%;
     --clr-dark-light: 235 45% 20%;
+    --clr-dark-ligh-hover: 235 43% 22%;
     --clr-purple: 246 80% 60%;
     --clr-marine: 236 100% 87%;
     --clr-blue: 235 45% 62%;
@@ -158,7 +159,7 @@ picture {
 
 .card {
     background-color: transparent;   
-    min-width: 327px;          
+    min-width: 327px;            
 }
 
 @media (min-width:60rem){
@@ -195,6 +196,11 @@ picture {
     padding: 1.5rem;
     position: relative;
     top:-22px
+}
+
+.card-content:hover {      
+    background-color: hsl(var(--clr-dark-ligh-hover));  
+    cursor: pointer;
 }
 
 .flex-content {
