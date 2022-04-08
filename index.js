@@ -1,19 +1,6 @@
-// const button = document.querySelector('button')
-
-// button.addEventListener('click', event => {
-//     fetch('./data.json')
-//         .then(response => {
-//             return response.json()
-//         })
-//         .then(data => {
-//             console.log(data)
-//         })
-    
-// })
-
-
 const buttons = [... document.querySelectorAll('.header-interval > button')]
 const hrs = [... document.querySelectorAll('.card-content p:first-child')]
+const previous = [...document.querySelectorAll('.card-content p:last-child')]
 buttons.forEach(button => {
     console.log(button)
 })
@@ -36,7 +23,13 @@ buttons.forEach(button => {
                     hrs.forEach(hr => {
                         hr.textContent = `${data[i].timeframes[period].current}hrs`
                         i +=1
-                    })                               
+                    }) 
+                    
+                    i=0
+                    previous.forEach(item => {
+                        item.textContent = `Last week - ${data[i].timeframes[period].previous}hrs`
+                        i +=1
+                    })
             })           
         
     })
