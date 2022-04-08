@@ -32,7 +32,7 @@ buttons.forEach(button => {
                 return response.json()
             })
             .then(data => {    
-                    const i = 0           
+                    let i = 0           
                     hrs.forEach(hr => {
                         hr.textContent = `${data[i].timeframes[period].current}hrs`
                         i +=1
