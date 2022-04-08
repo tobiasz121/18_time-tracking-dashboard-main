@@ -31,8 +31,10 @@ buttons.forEach((button)=>{
         const data1 = fetch('./data.json').then((response)=>{
             return response.json();
         }).then((data)=>{
-            for(let i = 0; i < hrs.length - 1; i++)hrs.forEach((hr)=>{
+            const i = 0;
+            hrs.forEach((hr)=>{
                 hr.textContent = `${data[i].timeframes[period].current}hrs`;
+                i += 1;
             });
         });
     });
