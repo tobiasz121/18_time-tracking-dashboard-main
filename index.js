@@ -1,12 +1,9 @@
 const buttons = [... document.querySelectorAll('.header-interval > button')]
 const hrs = [... document.querySelectorAll('.card-content p:first-child')]
 const previous = [...document.querySelectorAll('.card-content p:last-child')]
-buttons.forEach(button => {
-    console.log(button)
-})
 
 buttons.forEach(button => {
-    // console.log(button.textContent)    
+
     button.addEventListener('click', event => {
         buttons.forEach(btn => {
             btn.classList.remove('active')
@@ -30,13 +27,8 @@ buttons.forEach(button => {
                         item.textContent = `Last week - ${data[i].timeframes[period].previous}hrs`
                         i +=1
                     })
-            })           
-        
-    })
-
-    
-
-  
+            })          
+    })    
 })
 
 

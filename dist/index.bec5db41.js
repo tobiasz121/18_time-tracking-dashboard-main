@@ -8,10 +8,6 @@ const previous = [
     ...document.querySelectorAll('.card-content p:last-child')
 ];
 buttons.forEach((button)=>{
-    console.log(button);
-});
-buttons.forEach((button)=>{
-    // console.log(button.textContent)    
     button.addEventListener('click', (event)=>{
         buttons.forEach((btn)=>{
             btn.classList.remove('active');
