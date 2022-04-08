@@ -86,7 +86,7 @@ picture {
 
 /* typography */
 
-.ff-rubik { font-family: var(--ff-rubik) } ;
+.ff-rubik { font-family: var(--ff-rubik) }
 
 .uppercase { text-transform: uppercase; }
 
