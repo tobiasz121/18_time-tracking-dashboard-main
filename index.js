@@ -34,7 +34,7 @@ buttons.forEach(button => {
                 return response.json()
             })
             .then(data => {
-                console.log(data)
+                console.log(data.timeframes[period])
                 return data
             })           
         
