@@ -31,6 +31,7 @@ buttons.forEach((button)=>{
         const data1 = fetch('./data.json').then((response)=>{
             return response.json();
         }).then((data)=>{
+            console.log(data);
             return data;
         });
     });

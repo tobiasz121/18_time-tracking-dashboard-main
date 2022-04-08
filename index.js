@@ -34,10 +34,13 @@ buttons.forEach(button => {
                 return response.json()
             })
             .then(data => {
+                console.log(data)
                 return data
             })           
         
     })
+
+    
 
   
 })
