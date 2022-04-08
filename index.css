@@ -50,6 +50,15 @@
     box-sizing: border-box;
 }
 
+button {
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+
 body {
     font-size: var(--fs-400);
     font-weight: var(--fw-med);
@@ -202,7 +211,8 @@ picture {
 
 .header {
     background-color: transparent;   
-    min-width: 327px 
+    min-width: 327px;
+
 }
 
 @media (min-width:45rem){
@@ -217,6 +227,8 @@ picture {
     place-items: center;
     padding: 1.5rem;    
     background-color: hsl(var(--clr-purple));
+    z-index:34;
+    position: relative;
     
 }
 
@@ -249,14 +261,19 @@ picture {
     flex-direction: column;    
 }
 
+
 .header-interval {
     position: relative;
     top: -1rem;
-    z-index: -1;
+    z-index: 1;
     border-radius: 10px;
     background-color: hsl(var(--clr-dark-light));
     padding: 2.5rem 2rem 1rem 2rem;
     justify-content: space-between;
+
+}
+
+.header-interval > button {    
 
 }
 
