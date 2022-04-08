@@ -23,9 +23,6 @@ buttons.forEach((button)=>{
         buttons.forEach((btn)=>{
             btn.classList.remove('active');
         });
-        hrs.forEach((hr)=>{
-            console.log(hr.textContent);
-        });
         event.currentTarget.classList.add('active');
         const period = event.currentTarget.textContent.toLowerCase();
         const data1 = fetch('./data.json').then((response)=>{
