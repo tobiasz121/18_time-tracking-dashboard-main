@@ -120,7 +120,7 @@ img, picture {
   padding-inline: 2em;
 }
 
-@media (min-width: 45rem) {
+@media (min-width: 60rem) {
   .container {
     max-width: 70rem;
     min-width: auto;
@@ -156,7 +156,7 @@ img, picture {
   background-color: #0000;
 }
 
-@media (min-width: 45rem) {
+@media (min-width: 60rem) {
   .card {
     max-width: 255px;
     min-width: auto;
@@ -194,7 +194,7 @@ img, picture {
   align-items: center;
 }
 
-@media (min-width: 45rem) {
+@media (min-width: 60rem) {
   .flex-content--desktop {
     flex-direction: column;
     align-items: flex-start;
@@ -206,7 +206,7 @@ img, picture {
   background-color: #0000;
 }
 
-@media (min-width: 45rem) {
+@media (min-width: 60rem) {
   .header {
     max-width: 255px;
     min-width: auto;
@@ -232,7 +232,7 @@ img, picture {
   gap: 1rem;
 }
 
-@media (min-width: 45rem) {
+@media (min-width: 60rem) {
   .header-info-person {
     flex-direction: column;
   }

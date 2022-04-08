@@ -110,7 +110,7 @@ picture {
 
 .grid {
     display: grid;
-    gap: var(--gap, 1rem)
+    gap: var(--gap, 1rem);    
 }
 
 .container {
@@ -120,7 +120,7 @@ picture {
     margin-inline: auto;
 }
 
-@media (min-width:45rem) {
+@media (min-width:60rem) {
     .container{
         max-width: 70rem; 
         min-width: auto       
@@ -158,10 +158,10 @@ picture {
 
 .card {
     background-color: transparent;   
-    min-width: 327px 
+    min-width: 327px;          
 }
 
-@media (min-width:45rem){
+@media (min-width:60rem){
     .card {
         max-width: 255px;
         min-width: auto;
@@ -202,7 +202,7 @@ picture {
     align-items: center;
 }
 
-@media (min-width:45rem){
+@media (min-width:60rem){
     .flex-content--desktop {
         flex-direction: column;
         align-items: flex-start;
@@ -215,7 +215,7 @@ picture {
 
 }
 
-@media (min-width:45rem){
+@media (min-width:60rem){
     .header {
         max-width: 255px;
         min-width: auto;
@@ -243,7 +243,7 @@ picture {
     gap:1rem
 }
 
-@media (min-width:45rem){
+@media (min-width:60rem){
     .header-info-person{
         flex-direction: column;}
     }
@@ -273,9 +273,6 @@ picture {
 
 }
 
-.header-interval > button {    
-
-}
 
 
 @media (min-width:60rem){
