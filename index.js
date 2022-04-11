@@ -3,12 +3,10 @@ const hrs = [... document.querySelectorAll('.card-content p:first-child')]
 const previous = [...document.querySelectorAll('.card-content p:last-child')]
 
 buttons.forEach(button => {
-
     button.addEventListener('click', event => {
         buttons.forEach(btn => {
             btn.classList.remove('active')
-        })   
-          
+        })          
         event.currentTarget.classList.add('active')
         const period = event.currentTarget.textContent.toLowerCase()
         const data = fetch('./data.json')
